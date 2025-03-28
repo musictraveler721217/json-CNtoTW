@@ -13,7 +13,7 @@ echo 提交變更...
 git commit -m "初始提交"
 
 echo 推送到GitHub...
-git push -u origin master
+git push -u origin main
 
 echo 完成！
 pause
