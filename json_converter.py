@@ -5,6 +5,7 @@ import tkinter as tk
 from tkinter import messagebox, filedialog, ttk
 import threading
 from tkinterdnd2 import DND_FILES, TkinterDnD
+import webbrowser
 
 def convert_json_content(data):
     """遞迴轉換JSON中的所有字串值從簡體到繁體"""
@@ -67,6 +68,10 @@ class JsonConverterApp:
         # 建立選擇檔案按鈕
         self.select_button = ttk.Button(self.main_frame, text='選擇檔案', command=self.select_files)
         self.select_button.pack(pady=10)
+
+        # 建立Ko-fi捐款按鈕
+        self.kofi_button = ttk.Button(self.main_frame, text='支持我們', command=self.open_kofi)
+        self.kofi_button.pack(pady=5)
         
         # 建立狀態顯示區域
         self.status_text = tk.Text(self.main_frame, height=10, width=40)
@@ -110,6 +115,12 @@ class JsonConverterApp:
         self.status_text.insert(tk.END, message)
         self.status_text.see(tk.END)
     
+    def open_kofi(self):
+        # 使用pywebview創建一個新視窗來顯示Ko-fi頁面
+        import webview
+        webview.create_window('支持我們', 'https://ko-fi.com/snowshark', width=800, height=600)
+        webview.start()
+
     def run(self):
         self.root.mainloop()
 
