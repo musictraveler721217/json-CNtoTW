@@ -1,7 +1,7 @@
 # JSON簡體轉繁體轉換工具 v1.0.0
 
-[![GitHub Release](https://img.shields.io/github/v/release/musictraveler/JSON-CNtoTW?style=flat-square)](https://github.com/musictraveler/JSON-CNtoTW/releases/latest)
-[![Download](https://img.shields.io/badge/下載-最新版本-blue?style=flat-square)](https://github.com/musictraveler/JSON-CNtoTW/releases/latest/download/json_converter.exe)
+[![GitHub Release](https://img.shields.io/github/v/release/musictraveler/JSON-CNtoTW?style=flat-square)](https://github.com/musictraveler1217/JSON-CNtoTW/releases/latest)
+[![Download](https://img.shields.io/badge/下載-最新版本-blue?style=flat-square)](https://github.com/musictraveler1217/JSON-CNtoTW/releases/latest/download/json_converter.exe)
 
 ## 中文介紹
 這是一個簡單的工具，可以將JSON檔案中的簡體中文內容轉換為繁體中文，同時保持英文、符號和JSON格式不變。
